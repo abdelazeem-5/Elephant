@@ -4,11 +4,14 @@ using namespace std;
 int main()
 {
   int x;
-  cout << "Enter the number of steps \n";
+  int n;
+  cout << "Enter the step size \n";
+  cin >> n;
+  cout << "Enter the distance between the first and second elephant \n";
   cin >> x;
 
-  int num1 = x / 5;
-  int num2 = x % 5;
+  int num1 = x / n;
+  int num2 = x % n;
 
   if (num2 == 0)
   {
@@ -22,9 +25,3 @@ int main()
   
   return 0;
 }
-
-
-
-    
-
-
